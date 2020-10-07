@@ -1,35 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import Main from  './src/index';
 
 const App = () => {
-
-  const [like, setLike] = useState(0);
-
-  const increment = () => {
-    setLike(like + 1)
-  }
-
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>{like}</Text>
-
-      <TouchableOpacity onPress={increment}>
-        <Text>Like</Text>
-      </TouchableOpacity>
-    </View>
+    <Main />
   );
     
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 22
-  }
-})
 
 export default App;
