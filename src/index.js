@@ -8,8 +8,8 @@ const Main = () => {
   return (
     <>
       <Logo />
-      <Photo count={10} file={require("./assets/img/cat.png")} />
-      <Photo count={13} file={require("./assets/img/cat2.png")} />
+      <Photo count={0} file={require("./assets/img/cat.png")} />
+      <Photo count={0} file={require("./assets/img/cat2.png")} />
     </>
   );
     
